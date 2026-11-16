@@ -129,11 +129,23 @@ function setLanguage(language) {
     });
 
     document.title = dictionary["page.title"];
-    localStorage.setItem("tatil-heyecani-language", selectedLanguage);
+    try {
+        localStorage.setItem("tatil-heyecani-language", selectedLanguage);
+    } catch (error) {
+        // Tarayıcı kaydetmeye izin vermiyorsa (ör. gizli mod) dil yine de değişir.
+    }
+}
+
+function getSavedLanguage() {
+    try {
+        return localStorage.getItem("tatil-heyecani-language");
+    } catch (error) {
+        return null;
+    }
 }
 
 document.querySelectorAll("[data-language]").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.language));
 });
 
-setLanguage(localStorage.getItem("tatil-heyecani-language") || "tr");
+setLanguage(getSavedLanguage() || "tr");
