@@ -48,7 +48,7 @@ const translations = {
         "footer.corporate": "Kurumsal",
         "footer.contact": "İletişim",
         "footer.locationTitle": "Konumu Google Haritalar’da aç",
-        "footer.address": "Ergenekon Mahallesi Halaskargazi Caddesi No:13/1, Harbiye, İstanbul, Türkiye 34367",
+        "footer.address": "Katipmustafa Çelebi Mah. Sıraselviler Cad. Güney iş hanı Müzik Aletleri Çarşısı NO 30/38.  Beyoğlu/Ist",
         "footer.copyright": "© 2026 Tatil Heyecanı. Tüm hakları saklıdır."
     },
     en: {
