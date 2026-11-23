@@ -2,7 +2,7 @@ const translations = {
     tr: {
         "page.title": "Tatil Heyecanı",
         "brand.partnerLabel": "Bir Oygut Travel markası",
-        "brand.partnerLink": "Oygut Travel’ı ziyaret edin ↗",
+        "brand.partnerLink": "Oygut Travel’ı ziyaret edin",
         "language.label": "Dil seçimi",
         "nav.home": "Ana Sayfa",
         "nav.about": "Hakkımızda",
@@ -56,7 +56,7 @@ const translations = {
     en: {
         "page.title": "Tatil Heyecanı | Travel with Ease",
         "brand.partnerLabel": "A brand of Oygut Travel",
-        "brand.partnerLink": "Visit Oygut Travel ↗",
+        "brand.partnerLink": "Visit Oygut Travel",
         "language.label": "Select language",
         "nav.home": "Home",
         "nav.about": "About Us",

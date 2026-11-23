@@ -496,19 +496,29 @@ footer {
     font-size:14px;
 }
 
-.brand-partner a {
-    color:var(--koyu);
+.brand-partner-button {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:44px;
+    padding:10px 20px;
+    border:1px solid var(--turuncu);
+    border-radius:999px;
+    background:var(--turuncu);
+    color:#fff;
     font-weight:bold;
     text-decoration:none;
-    transition:color .2s ease;
+    transition:background .2s ease, color .2s ease, transform .2s ease;
 }
 
-.brand-partner a:hover,
-.brand-partner a:focus-visible {
-    color:var(--turuncu);
+.brand-partner-button:hover,
+.brand-partner-button:focus-visible {
+    background:transparent;
+    color:var(--koyu);
+    transform:translateY(-1px);
 }
 
-.brand-partner a:focus-visible {
+.brand-partner-button:focus-visible {
     outline:2px solid var(--turuncu);
     outline-offset:4px;
     border-radius:2px;
@@ -593,4 +603,56 @@ footer {
     .serit-track span {
         font-size: 16px;
     }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        display:grid;
+        grid-template-columns:1fr auto;
+        gap:8px 12px;
+        padding:10px 5%;
+    }
+
+    .logo img { height:36px; }
+
+    .nav-links {
+        grid-column:1 / -1;
+        display:grid;
+        grid-template-columns:repeat(2, minmax(0, 1fr));
+        gap:4px 10px;
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links a {
+        display:block;
+        padding:5px 2px;
+        font-family:Arial, sans-serif;
+        font-size:13px;
+    }
+
+    .language-switch { justify-self:end; margin:0; }
+
+    section {
+        padding:44px 6%;
+        scroll-margin-top:150px;
+    }
+
+    .hero { min-height:72svh; padding:48px 7%; }
+    .hero h1 { font-size:clamp(30px, 8vw, 38px); line-height:1.15; }
+    .hero p { font-size:16px; }
+    .about-heading h2, .services-heading h2 { font-size:30px; }
+    .about-copy p { font-size:15px; line-height:1.75; }
+    .about-copy .about-lead { font-size:19px; }
+    .about-values { gap:10px 16px; font-size:11px; }
+    .services-heading { margin-bottom:28px; }
+    .services-heading p { font-size:15px; }
+    .service { padding:22px; }
+
+    .brand-partner { padding:26px 6%; gap:12px; }
+    .brand-partner > span { font-size:13px; }
+    .brand-partner-button { min-height:46px; padding:11px 18px; font-size:14px; }
+
+    .footer-ust { grid-template-columns:1fr; gap:26px; }
+    footer { padding:30px 6% 20px; }
 }
