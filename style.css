@@ -479,6 +479,23 @@ footer {
     color: white;
 }
 
+.footer-brand-link {
+    color: #e4bd7b;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.footer-brand-link:hover,
+.footer-brand-link:focus-visible {
+    color: white;
+}
+
+.footer-brand-link:focus-visible {
+    outline: 2px solid #e4bd7b;
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
 
 .iletisim-bilgi {
     text-align: center;
